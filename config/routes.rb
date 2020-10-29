@@ -3,14 +3,13 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   devise_scope :user do
-  #   authenticated :user do
-  #     root :to => 'books#index', as: :authenticated_root
-  #   end
+    authenticated :user do
+      root :to => 'users#show', as: :authenticated_root
+    end
     unauthenticated :user do
       root :to => 'devise/sessions#new', as: :unauthenticated_root
     end
   end
   resources :users, only: [:show]
-  get 'users/show'
   resources :books
 end

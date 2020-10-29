@@ -4,4 +4,5 @@
 <p>住所 : <%= @user.address %></p>
 <p>プロフィール : <%= @user.profile %></p>
 
+<%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %> 
 <%= link_to 'Back', books_path %>
