@@ -1,0 +1,17 @@
+<h1>ユーザー一覧</h1>
+<%= link_to 'ユーザー追加', new_user_path %>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <p><%= user.name %></p>
+      <% if user.avatar.attached? %>
+        <%= image_tag user.avatar.variant(resize: "100x100") %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'books', books_path %>
+
+
