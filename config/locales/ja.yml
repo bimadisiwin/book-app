@@ -1,27 +1,34 @@
-en:
-  new_book: New Book
-  edit_book: Edit Book
+ja: # 言語
+  new_book: 新しい本
+  edit_book: 本の編集
   button:
-    show: show
-    edit: edit
-    destroy: destroy
-    new_book: new
-    back: back
+    show: 詳細
+    edit: 編集
+    destroy: 削除
+    new_book: 新規作成
+    back: 戻る
+  views:
+    pagination:
+      first: '最初'
+      last: '最後'
+      previous: '前'
+      next: '次'
+      truncate: '...'
   activerecord:
     models:
-      book: Books
+      book: 本 # モデル名: モデル名表記
     attributes:
-      book: 
-        title: Title
-        memo: Memo
-        author: Author
-        picture: Picture
+      book: # モデル名
+        title: タイトル # 属性名: 属性名表記
+        memo: メモ
+        author: 著者
+        picture: 画像
   notice:
-    new: Book was successfully created.
-    edit: Book was successfully updated.
-    destroy: Book was successfully destroyed. 
+    new: 登録しました
+    edit: 更新しました
+    destroy: 削除しました
   alert:
-    verification: Are you sure?   
+    verification: 本当によろしいですか？
   errors:
     format: "%{attribute}%{message}"
     messages:
@@ -58,6 +65,6 @@ en:
     select:
       prompt: 選択してください
     submit:
-      create: create
-      submit: save
-      update: update
+      create: 登録する
+      submit: 保存する
+      update: 更新する
