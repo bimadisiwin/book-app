@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: 'users/registrations'
@@ -11,5 +13,7 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: [:show]
-  resources :books
+  scope '(:locale)' do
+    resources :books
+  end
 end
