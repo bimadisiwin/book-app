@@ -1,8 +1,8 @@
-<h1>ユーザー</h1>
-<p>メールアドレス : <%= @user.email %></p>
-<p>郵便番号 : <%= @user.zip_code %></p>
-<p>住所 : <%= @user.address %></p>
-<p>プロフィール : <%= @user.profile %></p>
+<h1><%= t('profile.user') %></h1>
+<p><%= t('profile.email') %> : <%= @user.email %></p>
+<p><%= t('profile.zip_code') %> : <%= @user.zip_code %></p>
+<p><%= t('profile.address') %> : <%= @user.address %></p>
+<p><%= t('profile.profile') %> : <%= @user.profile %></p>
 
-<%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %> 
-<%= link_to 'Back', books_path %>
+<%= link_to t('button.update'), edit_user_registration_path, class: 'navbar-link' %> 
+<%= link_to t('button.back'), books_path %>
