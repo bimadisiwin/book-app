@@ -51,17 +51,17 @@ ja:
         instruction: 以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。
         subject: メールアドレス確認メール
       email_changed:
-        greeting: こんにちは、%{recipient}様。
+        greeting: こんにちは
         message: あなたのメール変更（%{email}）のお知らせいたします。
         message_unconfirmed: 
         subject: メール変更完了。
       password_change:
-        greeting: "%{recipient}様"
+        greeting: こんにちは
         message: パスワードが再設定されたことを通知します。
         subject: パスワードの変更について
       reset_password_instructions:
         action: パスワード変更
-        greeting: "%{recipient}様"
+        greeting: こんにちは
         instruction: パスワード再設定の依頼を受けたため、メールを送信しています。下のリンクからパスワードの再設定ができます。
         instruction_2: パスワード再設定の依頼をしていない場合、このメールを無視してください。
         instruction_3: パスワードの再設定は、上のリンクから新しいパスワードを登録するまで完了しません。
