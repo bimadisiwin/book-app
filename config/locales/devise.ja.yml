@@ -46,20 +46,25 @@ ja:
       unconfirmed: メールアドレスの本人確認が必要です。
     mailer:
       confirmation_instructions:
-        action: メールアドレスの確認
-        greeting: "%{recipient}様"
-        instruction: 以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。
         subject: メールアドレス確認メール
+        action: メールアドレスの確認
+        greeting: "ようこそ"
+        instruction: 以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。
       email_changed:
         greeting: こんにちは
-        message: あなたのメール変更（%{email}）のお知らせいたします。
+        message: あなたのメール変更のお知らせいたします。
+        message2: メールアドレスが変更されたことをお知らせするためにご連絡いたします.
         message_unconfirmed: 
         subject: メール変更完了。
       password_change:
-        greeting: こんにちは
-        message: パスワードが再設定されたことを通知します。
         subject: パスワードの変更について
+        greeting: こんにちは
+        title: パスワードの変更
+        message: パスワードが再設定されたことを通知します。
+        new_password: 新しいパスワード
+        confirm_new_password: 新しいパスワードを確認
       reset_password_instructions:
+        subject: パスワードの再設定について
         action: パスワード変更
         greeting: こんにちは
         instruction: パスワード再設定の依頼を受けたため、メールを送信しています。下のリンクからパスワードの再設定ができます。

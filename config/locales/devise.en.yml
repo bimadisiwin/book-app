@@ -19,6 +19,9 @@ en:
     mailer:
       confirmation_instructions:
         subject: "Confirmation instructions"
+        greeting: Welcome
+        action: Confirm my account
+        instruction: You can confirm your account email through the link below
       reset_password_instructions:
         greeting: Hello
         subject: "Reset password instructions"
@@ -31,8 +34,17 @@ en:
         subject: "Unlock instructions"
       email_changed:
         subject: "Email Changed"
+        greeting: Hello
+        message: We're contacting you to notify you that your email is being changed.
+        message2: We're contacting you to notify you that your email has been changed.
+        password_change:
+        subject: "Email Changed"
       password_change:
-        subject: "Password Changed"
+        subject: パスワードの変更について
+        greeting: Hello
+        message: We're contacting you to notify you that your password has been changed.
+        new_password: "New password"
+        confirm_new_password: "Confirm new password"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."

@@ -13,14 +13,14 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale }.merge options
   end
 
-  def after_sign_in_path_for(resource)
+  def after_sign_in_path_for(_resource)
     books_path
   end
 
   protected
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:email])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:email, :zip_code, :address, :profile])
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[email zip_code address profile])
   end
-
 end

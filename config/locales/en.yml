@@ -9,6 +9,7 @@ en:
     sign_up: Sign Up
     log_in: Log In
     update: Update
+    cancel: Cancel my account
     back: back
   authentication:
     user: User
@@ -21,6 +22,9 @@ en:
     zip_code: Zip Code
     address: Address
     profile: Profile
+    message: (leave blank if you don't want to change it)
+    message2: (we need your current password to confirm your changes)
+    message3: Unhappy?
   activerecord:
     models:
       book: Books
