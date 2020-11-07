@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: "users/registrations",
@@ -12,6 +14,8 @@ Rails.application.routes.draw do
       root :to => 'devise/sessions#new', as: :unauthenticated_root
     end
   end
-
-  resources :books
+  resources :users, only: [:show]
+  scope '(:locale)' do
+    resources :books
+  end
 end

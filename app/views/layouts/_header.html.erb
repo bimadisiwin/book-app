@@ -1,0 +1,16 @@
+<header>
+  <% if I18n.locale.to_s == "en" %>
+    <%= link_to('日本語', :locale => 'ja') %>
+  <% else %>
+    <%= link_to('English', :locale => 'en') %>
+  <% end %>  
+  <p class="navbar-text pull-right">
+    <% if user_signed_in? %>
+      <%= link_to t('profile.show'), user_path(id: current_user.id), class: 'navbar-link'  %> |
+      <%= link_to t('authentication.log_out'), destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
+    <% else %>
+      <%= link_to t('authentication.sign_up'), new_user_registration_path, class: 'navbar-link'  %> |
+      <%= link_to t('authentication.log_in'), new_user_session_path, class: 'navbar-link'  %>
+    <% end %>
+    </p>
+</header>

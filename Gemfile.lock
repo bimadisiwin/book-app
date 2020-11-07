@@ -89,10 +89,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    dotenv (2.7.6)
-    dotenv-rails (2.7.6)
-      dotenv (= 2.7.6)
-      railties (>= 3.2)
+    devise-i18n (1.9.2)
+      devise (>= 4.7.1)
     erubi (1.9.0)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
@@ -109,6 +107,18 @@ GEM
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     jwt (2.2.2)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -282,8 +292,9 @@ DEPENDENCIES
   capybara (>= 2.15)
   carrierwave
   devise
-  dotenv-rails
+  devise-i18n
   jbuilder (~> 2.7)
+  kaminari
   listen (~> 3.2)
   omniauth
   omniauth-github
