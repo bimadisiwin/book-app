@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 2020_10_28_064425) do
     t.string "unconfirmed_email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "zip_code"	
-    t.string "address"	
+    t.integer "zip_code"
+    t.string "address"
     t.text "profile"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
