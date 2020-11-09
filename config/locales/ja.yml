@@ -23,6 +23,7 @@ ja:
     zip_code: 郵便番号
     address: 住所
     profile: プロフィール
+    avatar: 画像
     message: (変更したくない場合は空白のままにします)
     message2: (変更を確認するには、現在のパスワードが必要です)
     message3: 退会しますか？
