@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_11_07_215951) do
     t.integer "zip_code"
     t.string "address"
     t.text "profile"
-    t.string "uid", null: false
+    t.string "uid", default: "", null: false
     t.string "provider", default: "", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
