@@ -25,6 +25,7 @@ en:
     message: (leave blank if you don't want to change it)
     message2: (we need your current password to confirm your changes)
     message3: Unhappy?
+    avatar: Avatar
   activerecord:
     models:
       book: Books
