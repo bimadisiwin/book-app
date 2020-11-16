@@ -6,6 +6,9 @@
 <% if @user.avatar.attached? %>
   <p><%= image_tag @user.avatar.variant(resize: "100x100") %>
 <% end %>
+
+<%= render 'relationships/follow_form', user: @user %>
+
 </br>
 <%= link_to t('button.update'), edit_user_registration_path, class: 'navbar-link' %> 
 <%= link_to t('button.back'), books_path %>
