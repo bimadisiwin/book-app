@@ -20,7 +20,7 @@ en:
     sign_up: Sign Up
     log_out: Log Out
   profile:
-    show: User Profile
+    show: Your Profile
     edit: Edit Profile
     zip_code: Zip Code
     address: Address
@@ -29,7 +29,7 @@ en:
     message: (leave blank if you don't want to change it)
     message2: (we need your current password to confirm your changes)
     message3: Unhappy?
-    following_user: Following User List
+    following_user: Your Following User List
   activerecord:
     models:
       book: Books
