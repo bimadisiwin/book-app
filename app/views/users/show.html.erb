@@ -9,7 +9,7 @@
 
 <%= render 'relationships/follow_form', user: @user %>
 
-<%= link_to 'フォロー中のユーザー', followings_user_path(@user.id) %>
+<%= link_to t('profile.following_user'), followings_user_path(@user.id) %>
 
 </br>
 <%= link_to t('button.update'), edit_user_registration_path, class: 'navbar-link' %> 
