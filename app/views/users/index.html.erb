@@ -1,0 +1,9 @@
+<h1><%= t('button.users') %></h1>
+<% @users.each do |user| %>
+  <li>
+    <%= link_to user.email, user %>
+  </li>
+<% end %>
+</br>
+<%= link_to t('button.back'), books_path %>
+

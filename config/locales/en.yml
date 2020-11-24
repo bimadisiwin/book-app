@@ -10,6 +10,9 @@ en:
     log_in: Log In
     update: Update
     cancel: Cancel my account
+    follow: Follow
+    unfollow: Unfollow
+    users: User List
     back: back
   authentication:
     user: User
@@ -17,15 +20,16 @@ en:
     sign_up: Sign Up
     log_out: Log Out
   profile:
-    show: User Profile
+    show: Your Profile
     edit: Edit Profile
     zip_code: Zip Code
     address: Address
     profile: Profile
+    avatar: Avatar
     message: (leave blank if you don't want to change it)
     message2: (we need your current password to confirm your changes)
     message3: Unhappy?
-    avatar: Avatar
+    following_user: Your Following User List
   activerecord:
     models:
       book: Books
@@ -38,7 +42,7 @@ en:
   notice:
     new: Book was successfully created.
     edit: Book was successfully updated.
-    destroy: Book was successfully destroyed. 
+    destroy: Book was successfully destroyed.
   alert:
     verification: Are you sure?  
   messages:

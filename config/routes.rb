@@ -14,8 +14,17 @@ Rails.application.routes.draw do
       root :to => 'devise/sessions#new', as: :unauthenticated_root
     end
   end
-  resources :users, only: [:show]
+  
   scope '(:locale)' do
     resources :books
   end
+
+  resources :users, only: [:show, :index]
+
+  resources :followings, only: [:index]
+  resources :followings do
+    get :index, on: :member
+  end
+
+  resources :relationships, only: [:create, :destroy]
 end

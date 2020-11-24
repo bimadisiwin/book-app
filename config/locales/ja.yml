@@ -10,6 +10,9 @@ ja:
     log_in: ログイン
     update: 更新
     cancel: 退会する
+    follow: フォロー
+    unfollow: フォローを解除する
+    users: ユーザー一覧
     back: 戻る
   authentication:
     log_in: ログイン
@@ -17,7 +20,7 @@ ja:
     log_out: ログアウト
   profile:
     user: ユーザー
-    show: プロフィール
+    show: あなたのプロフィール
     edit: プロフィール変更
     email: Eメール
     zip_code: 郵便番号
@@ -27,6 +30,7 @@ ja:
     message: (変更したくない場合は空白のままにします)
     message2: (変更を確認するには、現在のパスワードが必要です)
     message3: 退会しますか？
+    following_user: フォロー中のユーザー
   views:
     pagination:
       first: '最初'
