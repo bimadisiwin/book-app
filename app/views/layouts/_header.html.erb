@@ -8,8 +8,8 @@
     <% if user_signed_in? %>
       <%= link_to t('profile.show'), user_path(id: current_user.id), class: 'navbar-link'  %> |
       <%= link_to t('button.users'), users_path %> |
-      <%= link_to '本', books_path %> |
-      <%= link_to '日報', reports_path %> |
+      <%= link_to t('button.book'), books_path %> |
+      <%= link_to t('button.report'), reports_path %> |
       <%= link_to t('authentication.log_out'), destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
     <% else %>
       <%= link_to t('authentication.sign_up'), new_user_registration_path, class: 'navbar-link'  %> |

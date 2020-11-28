@@ -1,20 +1,21 @@
 <p>
-  <strong>タイトル:</strong>
+  <strong><%= t('report.title') %>:</strong>
   <%= @report.title %>
 </p>
 
 <p>
-  <strong>内容:</strong>
+
+  <strong><%= t('report.content') %>:</strong>
   <%= @report.content %>
 </p>
 
 <p>
-  <strong>ユーザー:</strong>
+  <strong><%= t('report.user') %>:</strong>
   <%= @report.user.email %>
 </p>
 
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+<%= link_to t('button.edit'), edit_report_path(@report) %> |
+<%= link_to t('button.back'), reports_path %>
 
 <%= render partial: 'comments/index', locals: { commentable: @report } %>
 <br>

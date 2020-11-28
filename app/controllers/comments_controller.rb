@@ -11,13 +11,13 @@ class CommentsController < ApplicationController
   def create
     @comment = @commentable.comments.new(comment_params)
     @comment.user = current_user
-    redirect_to @commentable, notice: 'Comment was successfully created.' if @comment.save
+    redirect_to @commentable, notice: t('notice.new') if @comment.save
   end
 
   # PATCH/PUT /reports/1/comments/1
   def update
     if @comment.update(comment_params)
-      redirect_to @commentable, notice: 'Comment was successfully updated.'
+      redirect_to @commentable, notice: t('notice.edit')
     else
       render :edit
     end
@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
 
   # DELETE /reports/1/comments/1
   def destroy
-    redirect_to @commentable, notice: 'Comment was successfully destroyed.' if @comment.destroy
+    redirect_to @commentable, notice: t('notice.destroy') if @comment.destroy
   end
 
   private
