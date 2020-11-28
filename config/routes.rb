@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   resources :reports do
     resources :comments, only: %i[create edit update destroy]
   end
+
+  resources :books do
+    resources :comments, only: %i[create edit update destroy]
+  end
   
   devise_for :users, controllers: {
     registrations: "users/registrations",

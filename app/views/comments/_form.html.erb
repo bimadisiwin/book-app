@@ -1,7 +1,5 @@
 <% comment = Comment.new unless comment %>
 <%= form_with(model: [commentable, comment], local: true) do |form| %>
-  <%= p commentable.class %>
-  <%= p comment.class %>
   <div class="field">
     <%= form.label :新規コメント %>
     <%= form.text_area :body %>
