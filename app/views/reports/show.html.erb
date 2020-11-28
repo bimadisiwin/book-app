@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>タイトル:</strong>
   <%= @report.title %>
@@ -17,3 +15,8 @@
 
 <%= link_to 'Edit', edit_report_path(@report) %> |
 <%= link_to 'Back', reports_path %>
+
+<%= render partial: 'comments/index', locals: { commentable: @report } %>
+<br>
+
+<%= render partial: 'comments/form', locals: { commentable: @report } %>

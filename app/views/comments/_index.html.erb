@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>コメント</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% commentable.comments.each do |comment| %>
+      <tr>
+        <td><%= comment.body %></td>
+        <% if user_signed_in? && current_user.id == comment.user.id %>
+          <td><%= link_to 'Edit', edit_polymorphic_path([commentable, comment]) %></td>
+          <td><%= link_to 'Destroy', polymorphic_path([commentable, comment]), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
