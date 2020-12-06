@@ -1,0 +1,11 @@
+<% comment = Comment.new unless comment %>
+<%= form_with(model: [commentable, comment], local: true) do |form| %>
+  <div class="field">
+    <%= form.label t('comment.new') %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

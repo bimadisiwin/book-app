@@ -1,4 +1,6 @@
 en:
+  comment:
+    new: comment space
   new_book: New Book
   edit_book: Edit Book
   button:

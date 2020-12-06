@@ -1,7 +1,20 @@
 ja:
+  comment:
+    new: コメント欄
+    user: ユーザー
+    comment: コメント
+  report:
+    report: 日報
+    title: タイトル
+    content: 日報内容
+    user: ユーザー
+    new: 新規作成
+    edit: 更新
   new_book: 新しい本
   edit_book: 本の編集
   button:
+    book: 本
+    report: 日報
     show: 詳細
     edit: 編集
     destroy: 削除
@@ -40,13 +53,18 @@ ja:
       truncate: '...'
   activerecord:
     models:
-      book: 本 # モデル名: モデル名表記
+      book: 本
+      report: 日報
     attributes:
-      book: # モデル名
-        title: タイトル # 属性名: 属性名表記
+      book:
+        title: タイトル
         memo: メモ
         author: 著者
         picture: 画像
+      report:
+        title: タイトル
+        content: 内容
+        user: ユーザー
   messages:
     characters: 文字以上
   notice:

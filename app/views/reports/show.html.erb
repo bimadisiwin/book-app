@@ -1,0 +1,23 @@
+<p>
+  <strong><%= t('report.title') %>:</strong>
+  <%= @report.title %>
+</p>
+
+<p>
+
+  <strong><%= t('report.content') %>:</strong>
+  <%= @report.content %>
+</p>
+
+<p>
+  <strong><%= t('report.user') %>:</strong>
+  <%= @report.user.email %>
+</p>
+
+<%= link_to t('button.edit'), edit_report_path(@report) %> |
+<%= link_to t('button.back'), reports_path %>
+
+<%= render partial: 'comments/index', locals: { commentable: @report } %>
+<br>
+
+<%= render partial: 'comments/form', locals: { commentable: @report } %>
