@@ -13,7 +13,7 @@
         <td><%= comment.body %></td>
         <td><%= comment.user.email %></td>
         <% if user_signed_in? && current_user.id == comment.user.id %>
-          <td><%= link_to t('button.edit'), edit_polymorphic_path([commentable, comment]) %></td>
+          <td><%= link_to t('button.update'), edit_polymorphic_path([commentable, comment]) %></td>
           <td><%= link_to t('button.destroy'), polymorphic_path([commentable, comment]), method: :delete, data: { confirm: t('alert.verification') } %></td>
         <% end %>
       </tr>
