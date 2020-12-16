@@ -11,15 +11,7 @@ class RelationshipsTest < ApplicationSystemTestCase
     visit users_url
     click_on "bob@example.com"
     click_on "フォロー"
-    assert_link "フォロー中のユーザー"
-  end
-
-  test "Show follow list" do
-    jhon_follows_bob
-    visit users_url
-    click_on "john@example.com"
-    click_on "フォロー"
-    assert_text "bob@example.com"
+    assert_button "フォローを解除する"
   end
 
   test "Show followers" do
@@ -36,7 +28,7 @@ class RelationshipsTest < ApplicationSystemTestCase
     visit users_url
     click_on "bob@example.com"
     click_on "フォローを解除する"
-    assert_link "フォロー"
+    assert_button "フォロー"
   end
 
   private

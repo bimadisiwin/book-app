@@ -54,4 +54,10 @@ class BooksTest < ApplicationSystemTestCase
     assert_text '削除しました'
     assert_no_text 'リトルトリー'
   end
+
+  test "showing a Comment on book" do
+    visit book_path(books(:little_tree))
+    assert_text "いい本です。"
+  end
+  
 end

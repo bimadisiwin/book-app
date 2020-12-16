@@ -15,11 +15,6 @@ class CommentsTest < ApplicationSystemTestCase
     assert_text "とても面白い本です。"
   end
 
-  test "showing a Comment on book" do
-    visit book_path(books(:little_tree))
-    assert_text "いい本です。"
-  end
-
   test "updating a Comment on book" do
     visit book_path(books(:little_tree))
     click_on "更新"
@@ -46,11 +41,6 @@ class CommentsTest < ApplicationSystemTestCase
     click_on "登録する"
     assert_text "登録しました"
     assert_text "初めての日報、お疲れ様でした！"
-  end
-
-  test "showing a Comment on report" do
-    visit report_path(reports(:one_day_report))
-    assert_text "今日は、Rubyの学習を頑張った！"
   end
 
   test "updating a Comment on report" do

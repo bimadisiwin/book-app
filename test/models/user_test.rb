@@ -12,13 +12,16 @@ class UserTest < ActiveSupport::TestCase
     assert_difference('Relationship.count', +1) do
       @john.follow(@bob)
     end
+    assert @john.following?(@bob)
   end
 
   test 'allows users to unfollow.' do
+    assert_not @john.following?(@bob)
     @john.follow(@bob)
     assert_difference('Relationship.count', -1) do
       @john.unfollow(@bob)
     end
+    assert_not @john.following?(@bob)
   end
 
   test '#create_unique_string' do

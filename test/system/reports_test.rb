@@ -47,4 +47,9 @@ class ReportsTest < ApplicationSystemTestCase
     assert_text "削除しました"
     assert_no_text "初めての日報"
   end
+
+  test "showing a Comment on report" do
+    visit report_path(reports(:one_day_report))
+    assert_text "今日は、Rubyの学習を頑張った！"
+  end
 end

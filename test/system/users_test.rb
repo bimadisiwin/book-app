@@ -62,7 +62,6 @@ class UsersTest < ApplicationSystemTestCase
     click_link 'ユーザー一覧'
     assert_text 'john@example.com'
     click_on "ログアウト"
-    assert_no_text 'john@example.com'
     assert_text "ログアウトしました。"
   end
 
