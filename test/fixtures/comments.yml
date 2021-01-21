@@ -1,0 +1,9 @@
+book_comment:
+  commentable: little_tree(Book)
+  user: john
+  body: "面白そう！"
+
+report_comment:
+  commentable: one_day_report(Report)
+  user: john
+  body: "お疲れ様です〜！"

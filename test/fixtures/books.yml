@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+little_tree:
+  title: リトルトリー
+  memo: いい本です。
+  author: フォレスト・カーター
+
+fight_life:
+  title: ファイト＆ライフ
+  memo: 素晴らしい本です。
+  author: 岡野
